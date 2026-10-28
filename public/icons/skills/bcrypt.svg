@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Bcrypt Cryptographic Password Hash Security Shield -->
+  <defs>
+    <linearGradient id="bcryptGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+  </defs>
+  <!-- Shield Outline -->
+  <path d="M50 8 L85 24 V52 C85 74 69 90 50 96 C31 90 15 74 15 52 V24 Z" fill="none" stroke="url(#bcryptGrad)" stroke-width="5" stroke-linejoin="round" />
+  <!-- Padlock Shackle -->
+  <path d="M37 45 V34 C37 26.8 42.8 21 50 21 C57.2 21 63 26.8 63 34 V45" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" />
+  <!-- Padlock Body -->
+  <rect x="31" y="45" width="38" height="32" rx="6" fill="url(#bcryptGrad)" />
+  <!-- Keyhole & Hash Key -->
+  <circle cx="50" cy="58" r="4.5" fill="#09090B" />
+  <path d="M50 62 V71" stroke="#09090B" stroke-width="4" stroke-linecap="round" />
+</svg>

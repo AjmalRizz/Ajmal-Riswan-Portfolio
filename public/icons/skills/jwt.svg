@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Official JSON Web Token (JWT) Multi-Colored Geometric Ring -->
+  <g transform="translate(50,50)">
+    <!-- Cyan Segment -->
+    <path d="M 0,-42 A 42,42 0 0,1 36.37,-21 L 24.25,-14 A 28,28 0 0,0 0,-28 Z" fill="#00B9F1" />
+    <path d="M 36.37,-21 A 42,42 0 0,1 42,0 L 28,0 A 28,28 0 0,0 24.25,-14 Z" fill="#00B9F1" />
+    <!-- Pink / Magenta Segment -->
+    <path d="M 42,0 A 42,42 0 0,1 36.37,21 L 24.25,14 A 28,28 0 0,0 28,0 Z" fill="#FB015B" />
+    <path d="M 36.37,21 A 42,42 0 0,1 21,36.37 L 14,24.25 A 28,28 0 0,0 24.25,14 Z" fill="#FB015B" />
+    <path d="M 21,36.37 A 42,42 0 0,1 0,42 L 0,28 A 28,28 0 0,0 14,24.25 Z" fill="#FB015B" />
+    <!-- Yellow / Orange Segment -->
+    <path d="M 0,42 A 42,42 0 0,1 -21,36.37 L -14,24.25 A 28,28 0 0,0 0,28 Z" fill="#FFC300" />
+    <path d="M -21,36.37 A 42,42 0 0,1 -36.37,21 L -24.25,14 A 28,28 0 0,0 -14,24.25 Z" fill="#FFC300" />
+    <!-- Purple / Indigo Segment -->
+    <path d="M -36.37,21 A 42,42 0 0,1 -42,0 L -28,0 A 28,28 0 0,0 -24.25,14 Z" fill="#D63AFF" />
+    <path d="M -42,0 A 42,42 0 0,1 -36.37,-21 L -24.25,-14 A 28,28 0 0,0 -28,0 Z" fill="#D63AFF" />
+    <path d="M -36.37,-21 A 42,42 0 0,1 -21,-36.37 L -14,-24.25 A 28,28 0 0,0 -24.25,-14 Z" fill="#00B9F1" />
+    <path d="M -21,-36.37 A 42,42 0 0,1 0,-42 L 0,-28 A 28,28 0 0,0 -14,-24.25 Z" fill="#00B9F1" />
+  </g>
+</svg>

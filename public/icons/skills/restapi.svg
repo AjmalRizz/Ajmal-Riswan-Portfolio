@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- REST APIs Official Cloud/Contract Endpoints Emblem -->
+  <defs>
+    <linearGradient id="restGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+  <!-- Central API Node Box -->
+  <rect x="22" y="28" width="56" height="44" rx="8" fill="#121218" stroke="url(#restGrad)" stroke-width="3" />
+  <!-- REST Text -->
+  <text x="50" y="55" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="16" text-anchor="middle" letter-spacing="1">REST</text>
+  <text x="50" y="65" fill="#10B981" font-family="monospace" font-weight="700" font-size="8.5" text-anchor="middle" letter-spacing="2">APIs</text>
+
+  <!-- Left Input Pin -->
+  <line x1="8" y1="50" x2="22" y2="50" stroke="url(#restGrad)" stroke-width="3" stroke-linecap="round" />
+  <circle cx="8" cy="50" r="4" fill="#10B981" />
+
+  <!-- Right Output Pin Top -->
+  <line x1="78" y1="42" x2="92" y2="42" stroke="url(#restGrad)" stroke-width="3" stroke-linecap="round" />
+  <circle cx="92" cy="42" r="3.5" fill="#10B981" />
+
+  <!-- Right Output Pin Bottom -->
+  <line x1="78" y1="58" x2="92" y2="58" stroke="url(#restGrad)" stroke-width="3" stroke-linecap="round" />
+  <circle cx="92" cy="58" r="3.5" fill="#10B981" />
+</svg>

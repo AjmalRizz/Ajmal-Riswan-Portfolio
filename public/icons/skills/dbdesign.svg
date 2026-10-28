@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Database Design / ERD Relational Schema Emblem -->
+  <defs>
+    <linearGradient id="dbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+  </defs>
+  <!-- Table 1 (Left Primary Table) -->
+  <rect x="10" y="15" width="34" height="42" rx="4" fill="#14141E" stroke="url(#dbGrad)" stroke-width="2.5" />
+  <rect x="10" y="15" width="34" height="12" rx="4" fill="url(#dbGrad)" />
+  <line x1="16" y1="36" x2="38" y2="36" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+  <line x1="16" y1="46" x2="32" y2="46" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Table 2 (Right Foreign Table) -->
+  <rect x="56" y="38" width="34" height="46" rx="4" fill="#14141E" stroke="url(#dbGrad)" stroke-width="2.5" />
+  <rect x="56" y="38" width="34" height="12" rx="4" fill="url(#dbGrad)" />
+  <line x1="62" y1="58" x2="84" y2="58" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+  <line x1="62" y1="68" x2="78" y2="68" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" />
+  <line x1="62" y1="76" x2="74" y2="76" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Relational Connector (1-to-Many Crow's Foot Schema Line) -->
+  <path d="M44 36 H50 V58 H56" fill="none" stroke="#F43F5E" stroke-width="2.5" stroke-linejoin="round" />
+  <circle cx="44" cy="36" r="3" fill="#F43F5E" />
+  <!-- Crow's foot branch -->
+  <path d="M52 54 L56 58 L52 62" fill="none" stroke="#F43F5E" stroke-width="2" stroke-linecap="round" />
+</svg>

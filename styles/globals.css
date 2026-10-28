@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #09090B;
+  --bg-secondary: #121215;
+  --bg-surface: #18181C;
+  --bg-surface-elevated: #202025;
+  --text-primary: #FFFFFF;
+  --text-secondary: #A1A1AA;
+  --text-muted: #71717A;
+  --border-hairline: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.2);
+  --accent: #D81E28;
+  --accent-hover: #E62A35;
+  --accent-dark: #8B0D18;
+  --accent-muted: rgba(216, 30, 40, 0.15);
+  --maroon-card: #6B0E16;
+  --maroon-glow: rgba(216, 30, 40, 0.25);
+  --selection-bg: #D81E28;
+  --selection-text: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: var(--selection-bg);
+  color: var(--selection-text);
+}
+
+html {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  scroll-behavior: auto;
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Utility Classes */
+.font-bebas {
+  font-family: var(--font-display), 'Bebas Neue', sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.font-script {
+  font-family: var(--font-script), 'Caveat', cursive;
+}
+
+.font-tech {
+  font-family: var(--font-tech), 'Space Grotesk', system-ui, sans-serif;
+}
+
+.font-mono-tech {
+  font-family: var(--font-mono-tech), 'JetBrains Mono', monospace;
+}
+
+/* Subtle SVG Grain Overlay */
+.grain-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
+
+/* Ambient Maroon Glow */
+.maroon-glow-bg {
+  background: radial-gradient(circle 800px at 50% 20%, rgba(216, 30, 40, 0.18), transparent 70%);
+}
+
+.subtle-maroon-radial {
+  background: radial-gradient(circle 500px at 50% 50%, rgba(216, 30, 40, 0.12), transparent 70%);
+}
+
+/* Hairline borders */
+.hairline-b {
+  border-bottom: 1px solid var(--border-hairline);
+}
+.hairline-t {
+  border-top: 1px solid var(--border-hairline);
+}
+.hairline-l {
+  border-left: 1px solid var(--border-hairline);
+}
+.hairline-r {
+  border-right: 1px solid var(--border-hairline);
+}
+.hairline-all {
+  border: 1px solid var(--border-hairline);
+}
+
+/* Lenis Recommended CSS */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Accessible focus states */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Blinking cursor for typewriter */
+@keyframes blinkCursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1.1em;
+  background-color: var(--accent);
+  vertical-align: -0.15em;
+  margin-left: 4px;
+  animation: blinkCursor 0.9s infinite;
+}
+
+/* Custom modern scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #09090B;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D81E28;
+}
+
+/* Reduced motion fallbacks */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Hide Next.js Dev Indicator ("N" circle button) */
+nextjs-portal,
+[data-nextjs-dev-overlay],
+[data-nextjs-toast],
+div[data-nextjs-dev-indicator] {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
